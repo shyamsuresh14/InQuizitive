@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "422533843687",
+    "firebase_url": "https://quiztest-6033f.firebaseio.com",
+    "project_id": "quiztest-6033f",
+    "storage_bucket": "quiztest-6033f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422533843687:android:67efd2ee69439c38",
+        "android_client_info": {
+          "package_name": "com.example.aravind.quiztest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422533843687-g4dt3vgg5o3l288h9lb2cdb4df457k7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBxyrlP3KHMqGifCnfp2aE4idspeP3cQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

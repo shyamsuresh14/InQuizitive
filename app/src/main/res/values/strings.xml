@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QuizTest</string>
+    <string name="signup_prompt"> Swipe left to join the bandwagon </string>
+</resources>
+
