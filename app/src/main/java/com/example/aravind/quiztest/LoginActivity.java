@@ -49,6 +49,11 @@ public class LoginActivity extends AppCompatActivity
         return cm.getActiveNetworkInfo() != null;
     }
 
+    public void SignUpSwitch(View view)
+    {
+        startActivity(new Intent(LoginActivity.this,SignUpActivity.class));
+    }
+
 
     public boolean onTouchEvent(MotionEvent event)
     {
@@ -80,10 +85,8 @@ public class LoginActivity extends AppCompatActivity
         username=((EditText)findViewById(R.id.user_email)).getText().toString();
         userpassword=((EditText)findViewById(R.id.user_password)).getText().toString();
 
-        if (username.equals("") || username==null || userpassword.equals("") || userpassword==null)
-            ((TextView)findViewById(R.id.ErrorLoginMsg)).setText("Incomplete form..");
 
-        else
+        if (! (username.equals("") || username==null || userpassword.equals("") || userpassword==null) )
         {
             firebaseAuth=FirebaseAuth.getInstance();
             firebaseAuth.signInWithEmailAndPassword(username, userpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -95,10 +98,6 @@ public class LoginActivity extends AppCompatActivity
                         startActivity(new Intent(LoginActivity.this, Question_Answer.class));
                     }
 
-                    else
-                        {
-                        ((TextView)findViewById(R.id.ErrorLoginMsg)).setText("Invalid Login Credentials...");
-                    }
                 }
             });
         }

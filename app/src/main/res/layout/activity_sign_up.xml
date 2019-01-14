@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <LinearLayout
@@ -36,11 +37,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/ErrorMsg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:textColor="@color/red"/>
 
             <EditText
@@ -74,6 +75,7 @@
                 android:inputType="textPassword" />
 
             <EditText
+                android:id="@+id/ConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

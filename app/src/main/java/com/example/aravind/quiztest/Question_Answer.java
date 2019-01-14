@@ -17,7 +17,7 @@ public class Question_Answer extends AppCompatActivity
 
     String question_render,OptA,OptB,OptC,OptD,ChosenOption;
     String correctAnswer;
-    String map_answervalue_toKey;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -26,8 +26,6 @@ public class Question_Answer extends AppCompatActivity
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-        RenderQuestion();
     }
 
     public void RenderQuestion()
@@ -53,7 +51,6 @@ public class Question_Answer extends AppCompatActivity
         radioGroup = (RadioGroup)findViewById(R.id.OptionsGroup);
         int SelectedOpt = radioGroup.getCheckedRadioButtonId();
         radioButton=(RadioButton)findViewById(SelectedOpt);
-        //Toast.makeText(Question_Answer.this,radioButton.getText(),Toast.LENGTH_LONG).show();
 
         ChosenOption=radioButton.getText().toString();
 
@@ -64,20 +61,13 @@ public class Question_Answer extends AppCompatActivity
             ((TextView)findViewById(R.id.Score_value)).setText("10");
 
             radioButton = (RadioButton) findViewById(R.id.Option1);
-            //radioButton.setChecked(false);
-            //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
 
             radioButton = (RadioButton) findViewById(R.id.Option2);
-            radioButton.setChecked(false);
-            //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
+            //radioButton.setChecked(false);
 
             radioButton = (RadioButton) findViewById(R.id.Option3);
-            //radioButton.setChecked(false);
-            //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
 
             radioButton = (RadioButton) findViewById(R.id.Option4);
-            //radioButton.setChecked(false);
-            //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
         }
 
         else
@@ -96,13 +86,9 @@ public class Question_Answer extends AppCompatActivity
             radioButton.setChecked(false);
             //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
 
-            radioButton = (RadioButton) findViewById(R.id.Option3);
-            //radioButton.setChecked(false);
-            //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
+            radioButton = (RadioButton) findViewById(R.id.Option3);;
 
             radioButton = (RadioButton) findViewById(R.id.Option4);
-            //radioButton.setChecked(false);
-            //radioButton.setBackgroundColor(Color.parseColor("#d39965"));
         }
 
     }

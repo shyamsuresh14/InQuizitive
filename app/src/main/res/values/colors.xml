@@ -3,7 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="TopBarColor">#113368</color>
+    <color name="TopBarColor">#1e4891</color>
     <color name="white">#FFFFFF</color>
     <color name="lightertintblue">#d7e1f2</color>
     <color name="black">#000000</color>
@@ -13,4 +13,6 @@
     <color name="OliveGreen">#488c4e</color>
     <color name="orange1">#ce7e1c</color>
     <color name="orange2">#d39965</color>
+    <color name="bgyellow">#ecf29d</color>
+    <color name="blue3">#e0e8ff</color>
 </resources>
