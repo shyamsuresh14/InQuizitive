@@ -109,6 +109,7 @@
             android:background="@color/bgyellow"
             android:layout_marginBottom="5dp"
             android:textSize="17sp"
+            android:onClick="SignUpSwitch"
             android:text="@string/signup_prompt" />
 
     </LinearLayout>
